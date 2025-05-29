@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería | Adopciones</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <style>
+    body {
+      background-color: #2db6bb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-wrapper {
+      background-color: #2db6bb;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .logo-img {
+      width: 150px;
+      height: auto;
+    }
+
+    .titulo-img {
+      width: 500px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .logo-img {
+        width: 100px;
+      }
+
+      .titulo-img {
+        width: 300px;
+      }
+    }
+
+    .mini-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .mini-img:hover {
+      transform: scale(1.05);
+    }
+
+    .galeria .col {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .titulo {
+      color: white;
+      font-weight: bold;
+    }
+
+    .nombre-recuadro {
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 5px;
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      max-width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+    }
+
+    .descripcion {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-top: 6px;
+      max-width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+    }
+
+    footer {
+      background-color: #126d72;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: cursive;
+      font-size: 1.25rem;
+      color: black;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO CON TEXTO Y LOGOS -->
+  <div class="header-wrapper">
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+      <img src="img/Canino.png" alt="Logo Canino" class="img-fluid logo-img" />
+      <img src="img/Casa.png" alt="Título Casa Canina" class="img-fluid titulo-img" />
+    </div>
+  </div>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column flex-lg-row w-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">Adóptanos</a>
+            <ul class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-white" href="Machos.html">Conocenos</a></li>
+      
+            </ul>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="Horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Ubicacion.html">Ubicación</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galería -->
+  <main class="container mt-4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="titulo"></h1>
+      </div>
+    </div>
+
+    <!-- Fila 1 -->
+    <div class="row justify-content-center galeria">
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho1.png" alt="Macho 1" class="mini-img" data-caption="Soy Max">
+        <div class="nombre-recuadro">Max</div>
+        <p class="descripcion">
+          Max fue rescatado de las calles, es un perro amigable y cariñoso. Se recomienda adoptarlo porque es muy sociable y se adapta rápido a nuevos hogares. 
+          Es un perro adulto, sano, y se lleva bien con niños.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho2.png" alt="Macho 2" class="mini-img" data-caption="Soy Rocky">
+        <div class="nombre-recuadro">Rocky</div>
+        <p class="descripcion">
+          Rocky es un perro protector, lo abandonaron en mal estado. Ideal para familias con niños. Está vacunado y desparasitado.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho3.png" alt="Macho 3" class="mini-img" data-caption="Soy Bobby">
+        <div class="nombre-recuadro">Bobby</div>
+        <p class="descripcion">
+          Bobby es un perro tranquilo que llegó a nuestras manos tras un rescate en mal estado. Perfecto para personas que buscan compañía calmada.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho4.png" alt="Macho 4" class="mini-img" data-caption="Soy Matt">
+        <div class="nombre-recuadro">Matt</div>
+        <p class="descripcion">
+          Matt fue encontrado vagando cerca de una carretera. Es activo, juguetón y se recomienda para familias activas. Está vacunado y desparasitado.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fila 2 -->
+    <div class="row justify-content-center mt-4 galeria">
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho5.png" alt="Macho 5" class="mini-img" data-caption="Soy Loki">
+        <div class="nombre-recuadro">Loki</div>
+        <p class="descripcion">
+          Loki es un perro adulto que fue encontrado en una colonia abandonada. Es muy cariñoso, ideal para quienes buscan un amigo fiel.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho6.jpeg" alt="Macho 6" class="mini-img" data-caption="Soy Tomy">
+        <div class="nombre-recuadro">Tomy</div>
+        <p class="descripcion">
+          Tomy es un cachorro lleno de energía y amor. Fue entregado por una familia que no podía seguir cuidándolo. Está vacunado y listo para su nuevo hogar.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Perro3.png" alt="Macho 7" class="mini-img" data-caption="Soy Mayley">
+        <div class="nombre-recuadro">Mayley</div>
+        <p class="descripcion">
+          Mayley fue encontrado en un parque. Es un perro cariñoso y tranquilo, ideal para personas que desean un perro calmado.
+        </p>
+      </div>
+      <div class="col-6 col-md-3 mb-4 text-center">
+        <img src="img/Macho8.jpeg" alt="Macho 8" class="mini-img" data-caption="Soy Fito">
+        <div class="nombre-recuadro">Fito</div>
+        <p class="descripcion">
+          Fito es un perro activo que necesita un hogar con espacio para jugar. Fue rescatado de una situación de abandono. Está vacunado y esterilizado.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal para agrandar imagen -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Nombre del perrito</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="Imagen ampliada" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Redes -->
+  <footer>
+    <p>CONTÁCTANOS EN NUESTRAS REDES SOCIALES:</p>
+    <a href="https://www.facebook.com/profile.php?id=100090712960526">
+      <img src="img/facebook.png" width="35" height="35" title="Facebook" alt="Facebook" />
+    </a>
+    &nbsp;
+    <a href="https://api.whatsapp.com/send?phone=5219512104046&text=%F0%9F%91%8B%20%C2%A1Hola!%20Este%20es%20un%20ejemplo%20de%20un%20mensaje">
+      <img src="img/wa.png" width="40" height="40" title="Whatsapp" alt="Whatsapp" />
+    </a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para agrandar imagen en modal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.mini-img');
+      const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+      const modalImage = document.getElementById('modalImage');
+      const modalTitle = document.getElementById('imageModalLabel');
+
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          const caption = img.getAttribute('data-caption');
+          modalImage.src = img.src;
+          modalTitle.textContent = caption;
+          modal.show();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

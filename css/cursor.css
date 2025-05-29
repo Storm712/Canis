@@ -1,0 +1,29 @@
+/* Ícono de lupa al hacer hover en miniatura */
+.galeria .expand-img {
+    position: relative;
+  }
+  
+  .galeria .expand-img:hover::after {
+    content: url('img/lupa-mas.png'); /* Ícono lupa aumentar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  /* Botón de cerrar con lupa */
+  #close-lightbox img {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.2s;
+  }
+  #close-lightbox img:hover {
+    transform: scale(1.2);
+  }

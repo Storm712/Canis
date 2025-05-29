@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casa Canina</title>
+
+  <!-- Bootstrap CSS 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #2db6bb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-wrapper {
+      background-color: #2db6bb;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .header-title {
+      font-family: 'Arial', sans-serif;
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .logo-img {
+      width: 150px;
+      height: auto;
+    }
+
+    .titulo-img {
+      width: 500px;
+      height: auto;
+    }
+
+    .content-wrapper {
+      background-color: #2db6bb;
+      padding: 2rem 1rem;
+    }
+
+    .about-section {
+      background-color: #126d72; /* fondo celeste clarito */
+      padding: 2rem;
+      border-radius: 10px;
+      border: 1px solid #2db6bb; /* borde muy tenue gris */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .logo-img {
+        width: 100px;
+      }
+
+      .titulo-img {
+        width: 300px;
+      }
+
+      .header-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO CON TEXTO Y LOGOS -->
+  <div class="header-wrapper">
+    
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+      <img src="img/Canino.png" alt="Logo Canino" class="img-fluid logo-img" />
+      <img src="img/Casa.png" alt="Título Casa Canina" class="img-fluid titulo-img" />
+    </div>
+  </div>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column flex-lg-row w-100">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">Adóptanos</a>
+            <ul class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-white" href="Machos.html">Conocenos</a></li>
+      
+            </ul>
+          </li>
+        
+          <li class="nav-item"><a class="nav-link" href="Horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contáctanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="Ubicacion.html">Ubicación</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content-wrapper container">
+
+    <!-- Sección "Acerca de nosotros" -->
+    <section class="about-section">
+      <h3 class="text-center">ACERCA DE NOSOTROS</h3>
+      <p>
+        Nuestra casa adoptiva nació con el propósito de brindar una segunda oportunidad a los perros en situación de calle o maltrato.
+        En muchas ocasiones, estos animales son víctimas del abandono, el abuso o la indiferencia. Desde nuestros inicios, 
+        hemos trabajado incansablemente para rescatar, rehabilitar y encontrar hogares responsables y amorosos para cada uno de ellos.
+      </p>
+      <p>
+        Este proyecto surgió de un grupo de voluntarios apasionados por el bienestar animal,
+        quienes comenzaron rescatando perros abandonados en la comunidad. Con el tiempo, 
+        la iniciativa creció gracias al apoyo de ciudadanos comprometidos, lo que permitió 
+        la creación de un espacio seguro donde los canes reciben atención veterinaria, 
+        alimentación adecuada y socialización antes de ser adoptados.
+      </p>
+      <p>
+        Desde nuestros primeros rescates, enfrentamos grandes desafíos, 
+        como la falta de recursos, el desconocimiento sobre la adopción responsable 
+        y la necesidad de crear conciencia en la comunidad. Sin embargo, con esfuerzo 
+        y dedicación, hemos logrado cambiar la vida de cientos de perros.
+      </p>
+      <p>
+        Nuestra misión es fomentar la adopción responsable, 
+        concientizar sobre la tenencia adecuada de mascotas y 
+        reducir el abandono animal. Consideramos que cada perro 
+        merece vivir en un entorno donde reciba amor, cuidado y respeto.
+      </p>
+    </section>
+
+    <!-- Carrusel de imágenes -->
+    <section class="mt-4">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="img/Macho1.png" class="d-block" alt="Macho1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Macho2.png" class="d-block" alt="Macho2" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Macho3.png" class="d-block" alt="Macho3" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Macho4.png" class="d-block" alt="Macho4" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/Macho5.png" class="d-block" alt="Macho5" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer Redes -->
+  <footer style="background-color: #126d72; padding: 10px; text-align: center;">
+    <p style="font-family: cursive; font-size: 1.25rem; color: black; font-style: italic;">
+      CONTACTANOS EN NUESTRAS REDES SOCIALES:
+    </p>
+    <a href="https://www.facebook.com/profile.php?id=100090712960526">
+      <img src="img/facebook.png" width="35" height="35" title="Facebook" alt="Facebook" />
+    </a>
+    &nbsp;
+    <a href="https://api.whatsapp.com/send?phone=5219512104046&text=%F0%9F%91%8B%20%C2%A1Hola!%20Este%20es%20un%20ejemplo%20de%20un%20mensaje">
+      <img src="img/wa.png" width="40" height="40" title="Whatsapp" alt="Whatsapp" />
+    </a>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

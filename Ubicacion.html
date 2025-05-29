@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casa Canina - Ubicación</title>
+
+  <!-- Bootstrap CSS 5.3 (para mantener mismo estilo) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #2db6bb;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .header-wrapper {
+      background-color: #2db6bb;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .logo-img {
+      width: 150px;
+      height: auto;
+    }
+
+    .titulo-img {
+      width: 500px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .logo-img {
+        width: 100px;
+      }
+
+      .titulo-img {
+        width: 300px;
+      }
+    }
+
+    /* Navbar igual que el original */
+    nav.navbar {
+      background-color: #212529; /* bg-dark */
+    }
+
+    footer.social-footer {
+      background-color: #126d72;
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-family: cursive;
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+
+    footer.social-footer a img {
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+.navbar-brand, .nav-link {
+  font-weight: normal;
+}
+    /* Contenedor para el mapa */
+    .map-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con logos -->
+  <div class="header-wrapper">
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+      <img src="img/Canino.png" alt="Logo Canino" class="logo-img" />
+      <img src="img/Casa.png" alt="Título Casa Canina" class="titulo-img" />
+    </div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column flex-lg-row w-100">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Adóptanos</a>
+            <ul class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-white" href="Machos.html">Conocenos</a></li>
+      
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Ubicacion.html">Ubicación</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor mapa -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15044.329022189222!2d-96.7215!3d17.073835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7224365170cfb%3A0x3a1f1d8e39e80e5e!2sLa%20Perrera%20Oaxaca!5e0!3m2!1ses-419!2smx!4v1712691244284!5m2!1ses-419!2smx"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Ubicación Casa Canina"
+    ></iframe>
+  </div>
+
+  <!-- Footer Redes -->
+  <footer class="social-footer">
+    CONTACTANOS EN NUESTRAS REDES SOCIALES:<br />
+    <a href="https://www.facebook.com/profile.php?id=100090712960526" target="_blank" rel="noopener">
+      <img src="img/facebook.png" width="35" height="35" alt="Facebook" title="Facebook" />
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=5219512104046&text=%F0%9F%91%8B%20%C2%A1Hola!%20Este%20es%20un%20ejemplo%20de%20un%20mensaje" target="_blank" rel="noopener">
+      <img src="img/wa.png" width="40" height="40" alt="Whatsapp" title="Whatsapp" />
+    </a>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
